@@ -7,45 +7,401 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link href="./assets/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg pt-4 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets//img/logo.png" alt="logo" />
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Predictions</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+          
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#" aria-disabled="true">Media</a>
+              </li>
+              <li class="nav-item px-2">
+                <button class="btn btn-outline-success" type="submit">Book Appointment</button>
+              </li>
+              <li class="nav-item px-2">
+                <button class="btn btn-outline-success" type="submit">Login</button>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+           
           </div>
         </div>
       </nav>
+      <div class="container">
+        <section class="hero-section h-88vh">
+          	
+            <div class="row h-88vh justify-content-center flex-column">
+                <div class="col-md-10 offset-md-2"><h1 class=" d-flex align-items-center"> 
+                     <svg viewBox="0 0 100% 100%">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                        Hey there!
+                    </text>
+                </svg>
+                 <p class="fs-16 ms-3 ff-type1"><span class="text-gray-75">
+                    <img class="me-1" src="./assets//img/star.svg" /> astrological</span> prediction</p>
+                </h1>
+            </div>
+                <div class="col-md-8 offset-md-4">
+                   
+                    <svg viewBox="0 0 100% 100%" style="width: 620px;">
+                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                            I am Gautam
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-gray-50 text-center fs-26">and I help people go from <span class="text-gray-75">invisible</span> to <span class="text-primary">unforgettable</span><br/><a href="#" class="text-white text-decoration-none mt-4 d-inline-block">About Me</a></p>
+                </div>
+            </div>
+           
+            
+          </section>
+          <section class="">
+            <h3 class="fs-120 ff-type2 section-heading">Media Coverage</h3>
+            <div class="row">
+                <div class="col-md-9 offset-md-3"><hr class="ms-md-4" /></div>
+            </div>
+
+
+            <div class="row mt-4 pt-4">
+                <div class="col-md-3">
+                    <p class="text-gray-50 h5 fw-normal"><span class="text-primary">Media</span> coverage my prediction. </p>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <div class="flip-card mb-4">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="news-box d-flex align-items-end h-100">
+                                <figure class="position-absolute h-100">
+                                    <img src="./assets/img/news-img.jpg" alt="new-image" />
+                                </figure>
+                               <figcaption>
+                                <img src="./assets/img/channel.png" alt="new-channel-image" class="d-block mb-3" />
+                                Virat Kohli to Retire in 2028" Astrologer's Verdict from 2016, with Most Spot-on 
+                                Predictions, Goes Viral
+                                <p class="fs-16 fw-normal mt-3">On April 1, 2016s</p>
+                               </figcaption>
+                            </div>
+                          </div>
+                          <div class="flip-card-back p-4 text-black">
+                           <div class="d-flex align-items-center">
+                                <img src="./assets/img/user.png" width="70px" height="70px" class="rounded" />
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Gautam Kapur </h5>
+                                    <p class="mb-0 text-primary">Astrologer</p>
+                                </div>
+                           </div>
+                           <h4 class="mb-0 fw-bold mt-3">Analysis of Virat Kohli's 
+                            horoscope</h4>
+                            <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+                                <div>
+                                    <button class="btn btn-secondary">Read More</button>
+                                    <button class="btn btn-primary">Media</button>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flip-card mb-4">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="news-box d-flex align-items-end h-100">
+                                <figure class="position-absolute h-100">
+                                    <img src="./assets/img/news-img.jpg" alt="new-image" />
+                                </figure>
+                               <figcaption>
+                                <img src="./assets/img/channel.png" alt="new-channel-image" class="d-block mb-3" />
+                                Virat Kohli to Retire in 2028" Astrologer's Verdict from 2016, with Most Spot-on 
+                                Predictions, Goes Viral
+                                <p class="fs-16 fw-normal mt-3">On April 1, 2016s</p>
+                               </figcaption>
+                            </div>
+                          </div>
+                          <div class="flip-card-back p-4 text-black">
+                           <div class="d-flex align-items-center">
+                                <img src="./assets/img/user.png" width="70px" height="70px" class="rounded" />
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Gautam Kapur </h5>
+                                    <p class="mb-0 text-primary">Astrologer</p>
+                                </div>
+                           </div>
+                           <h4 class="mb-0 fw-bold mt-3">Analysis of Virat Kohli's 
+                            horoscope</h4>
+                            <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+                                <div>
+                                    <button class="btn btn-secondary">Read More</button>
+                                    <button class="btn btn-primary">Media</button>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="flip-card mb-4 mt-5">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="news-box d-flex align-items-end h-100">
+                                <figure class="position-absolute h-100">
+                                    <img src="./assets/img/news-img.jpg" alt="new-image" />
+                                </figure>
+                               <figcaption>
+                                <img src="./assets/img/channel.png" alt="new-channel-image" class="d-block mb-3" />
+                                Virat Kohli to Retire in 2028" Astrologer's Verdict from 2016, with Most Spot-on 
+                                Predictions, Goes Viral
+                                <p class="fs-16 fw-normal mt-3">On April 1, 2016s</p>
+                               </figcaption>
+                            </div>
+                          </div>
+                          <div class="flip-card-back p-4 text-black">
+                           <div class="d-flex align-items-center">
+                                <img src="./assets/img/user.png" width="70px" height="70px" class="rounded" />
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Gautam Kapur </h5>
+                                    <p class="mb-0 text-primary">Astrologer</p>
+                                </div>
+                           </div>
+                           <h4 class="mb-0 fw-bold mt-3">Analysis of Virat Kohli's 
+                            horoscope</h4>
+                            <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+                                <div>
+                                    <button class="btn btn-secondary">Read More</button>
+                                    <button class="btn btn-primary">Media</button>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flip-card mb-4">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="news-box d-flex align-items-end h-100">
+                                <figure class="position-absolute h-100">
+                                    <img src="./assets/img/news-img.jpg" alt="new-image" />
+                                </figure>
+                               <figcaption>
+                                <img src="./assets/img/channel.png" alt="new-channel-image" class="d-block mb-3" />
+                                Virat Kohli to Retire in 2028" Astrologer's Verdict from 2016, with Most Spot-on 
+                                Predictions, Goes Viral
+                                <p class="fs-16 fw-normal mt-3">On April 1, 2016s</p>
+                               </figcaption>
+                            </div>
+                          </div>
+                          <div class="flip-card-back p-4 text-black">
+                           <div class="d-flex align-items-center">
+                                <img src="./assets/img/user.png" width="70px" height="70px" class="rounded" />
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Gautam Kapur </h5>
+                                    <p class="mb-0 text-primary">Astrologer</p>
+                                </div>
+                           </div>
+                           <h4 class="mb-0 fw-bold mt-3">Analysis of Virat Kohli's 
+                            horoscope</h4>
+                            <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+                                <div>
+                                    <button class="btn btn-secondary">Read More</button>
+                                    <button class="btn btn-primary">Media</button>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </section>
+
+          <section class="mt-5 pt-5">
+            <h3 class="fs-120 ff-type2 section-heading">Client Say’s</h3>
+            <div class="row">
+                <div class="col-md-9 offset-md-3"><hr class="ms-md-4" /></div>
+            </div>
+
+            <div class="row mt-4 pt-4">
+                <div class="col-md-3">
+                    <p class="text-gray-50 h5 fw-normal"><span class="text-primary">What</span>  my Clients
+                        say about me?</p>
+                </div>
+                <div class="col-md-8 offset-md-1">
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California​</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California​</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California​</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California​</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California​</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feedback-box p-4">
+                                        <img class="me-1" src="./assets//img/quote.png" /> 
+                                        <h4 class="fw-bold my-3">Gifted Astrologer</h4>
+                                        <p class="text-gray-75">Gautam is one of a gifted Astrologer who goes beyond our expectation with his predictability explaining the 'why' of our current situation and 'how'  to get past 'those'.His remedies if done religiously really makes a huge difference to the situation. I plan to keep coming back to him in my distress.                                            
+                                        </p>
+                                        <h4 class="mb-0 mt-5">Joy Kumar D</h4>
+                                        <p class="text-primary fs-18 mb-0">California</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-indicators position-relative mt-4">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                      </div>
+                </div>
+                </div>
+               
+            </section>
+
+            <section class="mt-5 pt-5">
+                <h3 class="fs-120 ff-type2 section-heading">My Services</h3>
+                <div class="row">
+                    <div class="col-md-9 offset-md-3"><hr class="ms-md-4" /></div>
+                </div>
+                <h5 class="my-5 text-gray-50 fw-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card text-center d-flex flex-column justify-content-between">
+                         <div>
+                            <h5 class="fw-bold">15 minute <br/>Consultation</h5>
+                            <ul class="text-start mt-4">
+                                <li class="text-gray-50">Calendar invite will be sent 
+                                    with appointment details.</li>
+                                    <li class="text-gray-50">Gautam Kapur will connect 
+                                        via video or phone call basis 
+                                        the appointment.</li>
+                            </ul>
+                         </div>
+
+                            <button class="btn btn-secondary w-100">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card text-center d-flex flex-column justify-content-between">
+                         <div>
+                            <h5 class="fw-bold">30 minute <br/>Consultation</h5>
+                            <ul class="text-start mt-4">
+                                <li class="text-gray-50">Calendar invite will be sent 
+                                    with appointment details.</li>
+                                    <li class="text-gray-50">Gautam Kapur will connect 
+                                        via video or phone call basis 
+                                        the appointment.</li>
+                            </ul>
+                         </div>
+
+                            <button class="btn btn-secondary w-100">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card text-center d-flex flex-column justify-content-between">
+                         <div>
+                            <h5 class="fw-bold">Full Analysis<br/>
+                                Consultation</h5>
+                            <ul class="text-start mt-4">
+                                <li class="text-gray-50">Calendar invite will be sent 
+                                    with appointment details.</li>
+                                    <li class="text-gray-50">Gautam Kapur will connect 
+                                        via video or phone call basis 
+                                        the appointment.</li>
+                                        <li class="text-gray-50">Full analysis report will be 
+                                            provided which will entail:
+                                        <p><span class="h1 d-inline-block text-primary align-middle">&#8226;</span> Birth time rectification 
+                                            if needed</p>
+                                        </li>
+                            </ul>
+                         </div>
+
+                            <button class="btn btn-secondary w-100">Book Appointment</button>
+                        </div>
+                    </div>
+                </div>
+                </section>
+      </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
