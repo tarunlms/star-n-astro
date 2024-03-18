@@ -1,7 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  background-color: #020205;
+  background-image: url(../img/main-bg.png) !important;
+  background-size: 100% auto;
+  background-repeat-x: no-repeat;
   color: var(--bs-white);
 }
 
@@ -144,7 +146,7 @@ svg text {
   font-size: 20px;
   font-weight: 700;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -184,6 +186,10 @@ svg text {
 
 .minw-248 {
   min-width: 248px;
+}
+
+.minw-107 {
+  min-width: 107px;
 }
 
 .text-secondary {
@@ -261,7 +267,7 @@ svg text {
   transition: all ease-in-out 0.3s;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20.5px;
+  line-height: 24px;
 }
 .btn:hover {
   filter: brightness(85%);
@@ -283,6 +289,12 @@ svg text {
 .btn.btn-secondary:active, .btn.btn-secondary:hover {
   background-color: transparent;
   border-color: #F76746;
+}
+.btn.btn-sm {
+  padding: 11px 22px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 40px;
 }
 
 .feedback-box {
@@ -317,4 +329,63 @@ svg text {
 }
 .content-body .footer {
   flex-shrink: 0;
+}
+
+.blog-card .blog-decs {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chatbot img {
+  position: fixed;
+  top: auto;
+  bottom: 40px;
+  left: auto;
+  right: 40px;
+}
+
+.accordion .accordion-item {
+  border-radius: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+  padding: 16px 16px 0 16px;
+}
+.accordion .accordion-item .accordion-header {
+  padding-bottom: 16px;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  padding-bottom: 16px;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #E4E4E4 !important;
+  padding: 0;
+}
+.accordion .accordion-item .accordion-header .accordion-button:after {
+  background-image: url(../img/angledown.svg);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.accordion .accordion-item .accordion-header .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion .accordion-item .accordion-collapse.collapse {
+  padding-bottom: 16px;
+}
+.accordion .accordion-item .accordion-collapse.collapse .accordion-body {
+  color: #797979 !important;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #313131;
+  font-size: 16px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/angledown.svg);
+  position: absolute;
+  top: -5px !important;
+  right: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
