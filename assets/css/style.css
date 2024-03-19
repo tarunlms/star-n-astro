@@ -3,12 +3,17 @@ body {
   height: 100%;
   background-image: url(../img/main-bg.png) !important;
   background-size: 100% auto;
-  background-repeat-x: no-repeat;
+  background-repeat: no-repeat;
   color: var(--bs-white);
 }
 
 html {
   height: 100%;
+}
+
+.maxh-114 {
+  max-height: 114px;
+  overflow: hidden;
 }
 
 .navbar .nav-item .nav-link {
@@ -30,6 +35,11 @@ html {
   }
   .navbar .nav-item .nav-link.active:after, .navbar .nav-item .nav-link:hover:after {
     width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .nav-item button.minw-107 {
+    min-width: 200px;
   }
 }
 .navbar.dark-header {
@@ -55,6 +65,14 @@ html {
 
 .fs-120 {
   font-size: 7.5rem;
+}
+
+.fs-60 {
+  font-size: 3.75rem;
+}
+
+.fs-24 {
+  font-size: 1.5rem;
 }
 
 .fs-16 {
@@ -150,12 +168,49 @@ svg text {
     stroke-width: 0;
   }
 }
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #E4E4E4;
+  font-size: 120px;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(255, 255, 255);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(255, 255, 255);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
 @media (max-width: 993px) {
   .section-heading.fs-120 {
     font-size: 3rem;
   }
 }
 
+@media (max-width: 993px) {
+  .fs-60 {
+    font-size: 1.5rem;
+  }
+}
 .news-box {
   position: relative;
   isolation: isolate;
@@ -200,10 +255,12 @@ svg text {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-.flip-card .flip-card-front, .flip-card .flip-card-back {
+.flip-card .flip-card-front,
+.flip-card .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 100%; /* Safari */
+  height: 100%;
+  /* Safari */
   backface-visibility: hidden;
 }
 .flip-card .flip-card-back {
@@ -235,6 +292,10 @@ svg text {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.border-bottom-gray {
+  border-bottom: 1px solid #313131;
+}
+
 .form-floating .form-control {
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #313131;
@@ -262,13 +323,13 @@ svg text {
   border-color: #797979;
 }
 .form-floating .form-control[type=time] {
-  background-image: url(./images/clock.svg);
+  background-image: url(../img/clock.svg);
   background-position: calc(100% - 20px);
   background-repeat: no-repeat;
   background-size: auto;
 }
 .form-floating .form-control[type=date] {
-  background-image: url(./images/calendar.svg);
+  background-image: url(../img/calendar.svg);
   background-position: calc(100% - 20px);
   background-repeat: no-repeat;
   background-size: auto;
@@ -278,6 +339,13 @@ svg text {
   right: 20px;
   top: 50%;
   transform: translate(0, -50%);
+}
+
+.profile-form .form-floating .form-control[type=time] {
+  background-image: url(./../img/clock.svg);
+}
+.profile-form .form-floating .form-control[type=date] {
+  background-image: url(./../img/calendar.svg);
 }
 
 .otp-control {
@@ -344,6 +412,16 @@ svg text {
   padding: 2rem 3rem;
   height: 500px;
 }
+@media (max-width: 1200px) {
+  .service-card {
+    padding: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .service-card {
+    height: auto;
+  }
+}
 .service-card ul li {
   list-style-image: url("../img/check-icon.png");
   margin-bottom: 1rem;
@@ -372,6 +450,17 @@ svg text {
   bottom: 40px;
   left: auto;
   right: 40px;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  .chatbot img {
+    width: 50px !important;
+  }
+}
+
+.maxh-114 {
+  max-height: 114px;
+  overflow: hidden;
 }
 
 .accordion .accordion-item {
@@ -400,12 +489,12 @@ svg text {
   outline: none;
   box-shadow: none;
 }
-.accordion .accordion-item .accordion-collapse.collapse {
-  padding-bottom: 16px;
+.accordion .accordion-item .accordion-collapse {
+  padding-bottom: 16px !important;
 }
-.accordion .accordion-item .accordion-collapse.collapse .accordion-body {
+.accordion .accordion-item .accordion-collapse .accordion-body {
   color: #797979 !important;
-  padding: 16px 0 0 0;
+  padding: 16px 0 0 0 !important;
   border-top: 1px solid #313131;
   font-size: 16px;
 }
@@ -448,4 +537,38 @@ svg text {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .clamp-3 .navbar .nav-item button.minw-107 {
+    min-width: 200px;
+  }
+}
+
+.profile-section, .history-section {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history-section img.setting-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  position: relative;
+  overflow: hidden;
+  background: url(../img/login-strip.png);
+}
+
+.media-wrap .media-box .image-shadow {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+}
+.media-wrap .media-box .news-channel {
+  position: absolute;
+  left: 20px;
+  top: auto;
+  bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
