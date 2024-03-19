@@ -63,13 +63,45 @@
                 <h1 class="fs-60 ff-type2 fw-medium  mb-5">Processing payment</h1>
 
               <h5 class="fw-normal">Please wait while your payment is being processed</h5>
-              <div class="progress my-5" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+              <div class="progress my-5" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar" style="width: 25%"></div>
               </div>
+              <h5 class="fw-normal px-4">Scan the QR code from one of the below-mentioned supported UPI apps. Pay before it times out!</h5>
+
+              <div class="pay-powred d-flex gap-4 align-items-center justify-content-center my-4">
+                <img src="./assets/img/gpay.png" alt="pay-platform" />
+                <span></span>
+                <img src="./assets/img/apay.png" alt="pay-platform" />
+                <span></span>
+                <img src="./assets/img/bhim.png" alt="pay-platform" />
+                <span></span>
+                <img src="./assets/img/paytm.png" alt="pay-platform" />
+              </div>
+              <hr/>
+              <h5 class="fw-normal mb-4">Time Remaining</h5>
+              <h4 class="text-primary mb-5"><img src="./assets/img/timer.png" alt="pay-platform" /> 04:54</h4>
+              <img src="./assets/img/qr-code.png" alt="pay-platform" />
               </div>
                     
                 </div>
-            </div>   
+            </div>  
+            
+            
+
+            <div class="row mt-5 justify-content-center">
+               
+                <div class="col-md-6">
+              <div class="bg-dark-50 p-md-5 p-4 text-center">
+                <img src="./assets/img/confirm.png" alt="pay-platform" />
+                <h1 class="ff-type2 fs-60 my-4">Successfully!</h1>
+                <p>You appointment booked <br/>successfully</p>
+                <button class="btn btn-primary w-100 mt-5">Continue</button>
+                </div>
+
+              
+                </div>
+                </div>
+               
         </section>
 
         
@@ -97,15 +129,15 @@
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
             </script>
             <script>
-// $(window).scroll(function() {    
-//     var scroll = $(window).scrollTop();
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
-//     if (scroll >= 200) {
-//         $(".clear-header").addClass("dark-header");
-//     } else {
-//         $(".clear-header").removeClass("dark-header");
-//     }
-// });
+    if (scroll >= 100) {
+        $(".clear-header").addClass("dark-header");
+    } else {
+        $(".clear-header").removeClass("dark-header");
+    }
+});
         </script>
 </body>
 
