@@ -3,7 +3,7 @@ body {
   height: 100%;
   background-image: url(../img/main-bg.png) !important;
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   color: var(--bs-white);
 }
 
@@ -141,38 +141,6 @@ svg text {
   .name-svg {
     width: 420px;
   }
-}
-
-@keyframes stroke {
-  0% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(255, 255, 255);
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 50%;
-    stroke-width: 2;
-  }
-  70% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(255, 255, 255);
-  }
-  80% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(255, 255, 255);
-    stroke-width: 3;
-  }
-  100% {
-    fill: rgb(255, 255, 255);
-    stroke: rgba(54, 95, 160, 0);
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    stroke-width: 0;
-  }
-}
-svg text {
-  animation: stroke 5s infinite alternate;
-  stroke-width: 2;
-  stroke: #E4E4E4;
-  font-size: 120px;
 }
 
 @keyframes stroke {
@@ -571,4 +539,89 @@ svg text {
   left: 20px;
   top: auto;
   bottom: 20px;
+}
+
+.breadcrumb li {
+  color: #797979;
+}
+.breadcrumb li::before {
+  color: #F76746 !important;
+  padding: 0 15px 0 6px !important;
+}
+
+.bg-dark-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sponsor-card {
+  min-height: 200px;
+  line-height: 94px;
+}
+.sponsor-card img {
+  max-width: 100%;
+}
+
+.nav-tabs {
+  border-color: #313131;
+}
+.nav-tabs .nav-link {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--bs-white);
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-right: 5px;
+  border: 0;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  background-color: #F76746;
+  color: var(--bs-white);
+}
+@media (max-width: 767px) {
+  .nav-tabs .nav-link {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+.form-check {
+  padding-left: 2.5rem;
+}
+.form-check label {
+  position: relative;
+}
+.form-check label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/uncheck.png");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  background-size: contain;
+  top: -4px;
+}
+.form-check input {
+  display: none;
+}
+.form-check input:checked + label::before {
+  background-image: url("../img/checked.png");
+}
+@media (max-width: 767px) {
+  .form-check {
+    margin-bottom: 1rem;
+  }
+}
+
+.pay-img-fix img {
+  height: 30px;
+}
+
+.w-250 {
+  width: 250px;
+}
+@media (max-width: 767px) {
+  .w-250 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
