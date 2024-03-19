@@ -42,6 +42,13 @@ html{
      
         }
     }
+    &.dark-header{
+        background-color: #1e1e31;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
 
 .h-88vh{
@@ -90,8 +97,11 @@ hr{
 
 svg {
 	font-family: "Abhaya Libre", serif;
-	//position: absolute; 
-	width: 522px; height: 100%;
+	width: 522px; 
+    height: 100%;
+    @media(max-width:1024px){
+        width: 350px; 
+    }
 }
 svg text {
 	
@@ -99,6 +109,19 @@ svg text {
 	stroke-width: 2;
 	stroke: $default-text;
 	font-size: 120px;
+    @media(max-width:1024px){
+        font-size: 80px; 
+    }
+    @media(max-width:767px){
+        font-size: 50px; 
+    }
+}
+
+.name-svg{
+    width: 620px;
+    @media(max-width:1024px){
+        width: 420px; 
+    }
 }
 @keyframes stroke {
 	0%   {
@@ -141,7 +164,7 @@ svg text {
         font-size: 20px;
         font-weight: 700;
         display: -webkit-box;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;  
         overflow: hidden;
         img{
@@ -397,4 +420,34 @@ svg text {
 }
 .accordion-button:not(.collapsed){
     box-shadow: none;
+}
+
+.scale-card{
+    position: relative;
+   overflow: hidden;
+   margin-bottom: 1.5rem;
+   .news-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all .5s ease;
+   }
+   &:hover{
+    img{
+        transform: scale(1.2);
+    }
+   }
+   .prediction-text{
+    position: absolute;
+    inset: auto 0 0 0;
+    width: 100%;
+   }
+}
+
+.clamp-3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg pt-4 sticky-top">
+    <nav class="navbar navbar-expand-lg pt-4 sticky-top clear-header" id="nav">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets//img/logo.png" alt="logo" />
@@ -54,19 +54,19 @@
 
             <div class="row h-88vh justify-content-center flex-column">
                 <div class="col-md-10 offset-md-2">
-                    <h1 class=" d-flex align-items-center">
+                    <div class=" d-flex align-items-center">
                         <svg viewBox="0 0 100% 100%">
                             <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                                 Hey there!
                             </text>
                         </svg>
-                        <p class="fs-16 ms-3 ff-type1"><span class="text-gray-75">
+                        <p class="fs-16 ms-3 ff-type1 mb-0"><span class="text-gray-75">
                                 <img class="me-1" src="./assets//img/star.svg" /> astrological</span> prediction</p>
-                    </h1>
+                        </div>
                 </div>
                 <div class="col-md-8 offset-md-4">
 
-                    <svg viewBox="0 0 100% 100%" style="width: 620px;">
+                    <svg viewBox="0 0 100% 100%" class="name-svg">
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                             I am Gautam
                         </text>
@@ -671,6 +671,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
+            </script>
+            <script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".clear-header").addClass("dark-header");
+    } else {
+        $(".clear-header").removeClass("dark-header");
+    }
+});
+        </script>
 </body>
 
 </html>
