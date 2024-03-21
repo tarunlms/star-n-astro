@@ -12,8 +12,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate css -->
+
+
+    <link href="./assets/css/aos.css" rel="stylesheet">
+
     <link href="./assets/css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -23,7 +28,7 @@
             <nav class="navbar navbar-expand-lg py-3 sticky-top clear-header" id="nav">
                 <div class="container">
                     <div class="navbar-logo">
-                        <a class="navbar-brand" href="/">
+                        <a class="navbar-brand" href="">
                             <img src="./assets/img/stars-and-astrology.svg" alt="logo" />
                         </a>
                         <p class="profile-dropdown text-primary m-0" type="button" id="dropdownMenuButton1"
@@ -40,31 +45,32 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto my-3  my-lg-0 gap-lg-0 gap-3 d-flex flex-wrap align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/about.html">About Us</a>
+                                <a class="nav-link" aria-current="page" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/predictions.html">Predictions</a>
+                                <a class="nav-link" href="predictions.html">Predictions</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/media.html" aria-disabled="true">Media</a>
+                                <a class="nav-link" href="media.html" aria-disabled="true">Media</a>
                             </li>
                         </ul>
                         <ul class="button_navigation p-0 mt-3 mt-lg-0 mb-0 gap-3 d-flex flex-wrap align-items-center ">
                             <li class="nav-item px-2 last-child">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="http://127.0.0.1:5500/#myServices">Book Appointment</a>
+                                <a class="nav-link btn btn-secondary btn-sm minw-107" href="./#myServices">Book
+                                    Appointment</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item px-2 last-child login-btn">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link" href="/auth/login.html">Login</a>
+                                <a class="nav-link btn btn-secondary btn-sm minw-107" href="auth/login.html">Login</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item px-2 last-child logout-btn">
-                                <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link" href="#">Logout</a>
-                                <!-- </button> -->
+                                <button class="btn btn-secondary btn-sm minw-107">
+                                    Logout
+                                </button>
                             </li>
                             <li class="nav-item profile-drop px-2 last-child">
                                 <div class="dropdown">
@@ -74,7 +80,7 @@
                                     </p>
                                     <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center border-bottom-gray"
-                                                href="/profile.html">
+                                                href="profile.html">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -82,7 +88,7 @@
                                                         fill="white" />
                                                 </svg>
                                                 Profile</a></li>
-                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center" href="#">
+                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -102,8 +108,8 @@
                 <div class="container">
                     <section class="hero-section h-88vh">
 
-                        <div class="row h-88vh justify-content-center flex-column">
-                            <div class="col-md-10 offset-md-2">
+                        <div class="row h-88vh justify-content-center flex-column d-none d-md-block">
+                            <div class="col-md-10 offset-lg-1 offset-lg-2 ">
                                 <div class=" d-flex align-items-center">
                                     <svg viewBox="0 0 100% 100%">
                                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
@@ -115,7 +121,7 @@
                                         prediction</p>
                                 </div>
                             </div>
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-3 offset-lg-4">
 
                                 <svg viewBox="0 0 100% 100%" class="name-svg">
                                     <text x="50%" y="50%" dy=".35em" text-anchor="middle">
@@ -123,7 +129,27 @@
                                     </text>
                                 </svg>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                                <p class="text-gray-50 text-center fs-26">and I help people go from <span
+                                        class="text-gray-75">invisible</span> to <span
+                                        class="text-primary">unforgettable</span><br /><a href="/about.html"
+                                        class="text-white text-decoration-none mt-4 d-flex align-items-center justify-content-center gap-2">About
+                                        Me <img src="./assets/img/arrow-right.svg" alt="arrow-right"></a></p>
+                            </div>
+                        </div>
+                        <div class="row h-88vh justify-content-center flex-column d-block d-md-none mobile-hero">
+                            <div class="col-md-10 offset-lg-1 offset-lg-2 ">
+                                <div class="text-center pt-5 " data-aos="fade-up" data-aos-duration="2000">
+                                    
+                                    
+                                    <p class="fs-16 ms-3 ff-type1 mb-0"><span class="text-gray-75">
+                                            <img class="me-1" src="./assets//img/star.svg" /> astrological</span>
+                                        prediction</p>
+                                        <p class="heading ff-type2 fw-bold ms-3  mb-0">Hey there!</p>
+                                        <p class="heading ff-type2 fw-bold ms-3  mb-0">I am Gautam</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
                                 <p class="text-gray-50 text-center fs-26">and I help people go from <span
                                         class="text-gray-75">invisible</span> to <span
                                         class="text-primary">unforgettable</span><br /><a href="/about.html"
@@ -134,8 +160,9 @@
 
 
                     </section>
-                    <section class="mt-md-0 mt-5">
-                        <h3 class="fs-120 ff-type2 section-heading">Media Coverage</h3>
+                    <section class="mt-md-0 mt-5" data-aos="fade-up" data-aos-duration="2000">
+                        <h3 class="fs-120 ff-type2 section-heading " >Media
+                            Coverage</h3>
                         <div class="row">
                             <div class="col-md-9 offset-md-3">
                                 <hr class="ms-md-4" />
@@ -144,14 +171,15 @@
 
 
                         <div class="row mt-md-4 pt-4">
-                            <div class="col-md-3 mb-4 animate__animated animate__slideInLeft">
-                                <p class="text-gray-50 h5 fw-normal">The <span class="text-primary">media covered</span>
+                            <div class="col-md-3 mb-4">
+                                <p class="text-gray-50 h5 fw-normal " data-aos="fade-up" data-aos-duration="2000">The
+                                    <span class="text-primary">media covered</span>
                                     my
                                     prediction.</p>
                                 <img src="./assets/img/right-arrow.svg" alt="right-arrow">
                             </div>
                             <div class="col-md-4 offset-md-1">
-                                <div class="flip-card mb-4">
+                                <div class="flip-card mb-4" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
                                             <div class="news-box d-flex align-items-end h-100">
@@ -180,7 +208,8 @@
                                                             <p class="mb-0 text-primary">Astrologer</p>
                                                         </div>
                                                     </div>
-                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat Kohli's
+                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat
+                                                        Kohli's
                                                         horoscope</h4>
                                                     <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -199,7 +228,7 @@
                                     </div>
                                 </div>
 
-                                <div class="flip-card mb-4">
+                                <div class="flip-card mb-4" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
                                             <div class="news-box d-flex align-items-end h-100">
@@ -228,7 +257,8 @@
                                                             <p class="mb-0 text-primary">Astrologer</p>
                                                         </div>
                                                     </div>
-                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat Kohli's
+                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat
+                                                        Kohli's
                                                         horoscope</h4>
                                                     <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -247,8 +277,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 animate__animated animate__slideInRight">
-                                <div class="flip-card mb-4 mt-md-5">
+                            <div class="col-md-4 " data-aos="fade-up" data-aos-duration="2000">
+                                <div class="flip-card mb-4 mt-md-5" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
                                             <div class="news-box d-flex align-items-end h-100">
@@ -277,7 +307,8 @@
                                                             <p class="mb-0 text-primary">Astrologer</p>
                                                         </div>
                                                     </div>
-                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat Kohli's
+                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat
+                                                        Kohli's
                                                         horoscope</h4>
                                                     <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -295,7 +326,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flip-card mb-4">
+                                <div class="flip-card mb-4" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="flip-card-inner">
                                         <div class="flip-card-front">
                                             <div class="news-box d-flex align-items-end h-100">
@@ -324,7 +355,8 @@
                                                             <p class="mb-0 text-primary">Astrologer</p>
                                                         </div>
                                                     </div>
-                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat Kohli's
+                                                    <h4 class="mb-0 fw-bold mt-3 heading-clamp">Analysis of Virat
+                                                        Kohli's
                                                         horoscope</h4>
                                                     <h5 class="mt-2 fw-normal">On April 1, 2016</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -347,20 +379,22 @@
                     </section>
 
                     <section class="mt-md-5 mt-0 pt-5">
-                        <h3 class="fs-120 ff-type2 section-heading">Client Say’s</h3>
-                        <div class="row">
+                        <h3 class="fs-120 ff-type2 section-heading" data-aos="fade-up" data-aos-duration="2000">Client
+                            Say’s</h3>
+                        <div class="row" data-aos="fade-up" data-aos-duration="2000">
                             <div class="col-md-9 offset-md-3">
                                 <hr class="ms-md-4" />
                             </div>
                         </div>
 
-                        <div class="row mt-md-4 mt-0 pt-4">
-                            <div class="col-md-3 mb-4">
-                                <p class="text-gray-50 h5 fw-normal"><span class="text-primary"></span>What my Clients
+                        <div class="row mt-md-4 mt-0 pt-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="col-md-3 mb-4" >
+                                <p class="text-gray-50 h5 fw-normal" ><span
+                                        class="text-primary"></span>What my Clients
                                     say about me?</p>
                                 <img src="./assets/img/right-arrow.svg" alt="right-arrow">
                             </div>
-                            <div class="col-md-8 offset-md-1">
+                            <div class="col-md-8 offset-md-1" >
 
                                 <div id="carouselExampleIndicators" class="carousel slide">
 
@@ -502,15 +536,16 @@
                     </section>
 
                     <section class="mt-md-5 mt-0 pt-5" id="myServices">
-                        <h3 class="fs-120 ff-type2 section-heading">My Services</h3>
+                        <h3 class="fs-120 ff-type2 section-heading" data-aos="fade-up" data-aos-duration="2000">My
+                            Services</h3>
                         <div class="row">
-                            <div class="col-md-9 offset-md-3">
+                            <div class="col-md-9 offset-md-3 " data-aos="fade-up" data-aos-duration="2000">
                                 <hr class="ms-md-4" />
                             </div>
                         </div>
-                        <h5 class="my-5 text-gray-50 fw-normal">Lorem Ipsum is simply dummy text of the <span
+                        <h5 class="my-5 text-gray-50 fw-normal" data-aos="fade-up" data-aos-duration="2000">Lorem Ipsum is simply dummy text of the <span
                                 class="text-primary">printing and typesetting</span> industry</h5>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up" data-aos-duration="2000">
                             <div class="col-lg-4 mt-lg-0 mb-4">
                                 <div class="service-card h-100 text-center d-flex flex-column justify-content-between">
                                     <div>
@@ -524,7 +559,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="http://127.0.0.1:5500/auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
+                                    <a href="auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 mt-lg-0 mb-4">
@@ -540,7 +575,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="http://127.0.0.1:5500/auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
+                                    <a href="auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 mt-lg-0 mb-4">
@@ -565,29 +600,32 @@
                                         </ul>
                                     </div>
 
-                                    <a href="http://127.0.0.1:5500/auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
+                                    <a href="auth/login.html" class="btn btn-secondary w-100 mt-3">Book Appointment</a>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section class="mt-md-5 mt-0 pt-5">
-                        <h3 class="fs-120 ff-type2 section-heading">My Predictions</h3>
+                        <h3 class="fs-120 ff-type2 section-heading" data-aos="fade-up" data-aos-duration="2000">My
+                            Predictions</h3>
                         <div class="row">
-                            <div class="col-md-9 offset-md-3">
+                            <div class="col-md-9 offset-md-3 " data-aos="fade-up" data-aos-duration="2000">
                                 <hr class="ms-md-4" />
                             </div>
                         </div>
 
-                        <div class="row mt-5">
+                        <div class="row mt-5" data-aos="fade-up" data-aos-duration="2000">
                             <div class="col-md-4 mb-md-0 mb-4">
                                 <div class="blog-card text-left d-flex flex-column justify-content-between">
                                     <div>
                                         <img src="./assets/img/virat.png" alt="virat" class="w-100">
                                         <div class="px-4 pb-3 pt-2 blog-decs h-100">
-                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope</h5>
+                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope
+                                            </h5>
                                             <p class="fs-16 fw-normal mt-2 pb-1 mb-2">On April 1, 2016</p>
-                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                                         </div>
                                     </div>
@@ -598,9 +636,11 @@
                                     <div>
                                         <img src="./assets/img/virat.png" alt="virat" class="w-100">
                                         <div class="px-4 pb-3 pt-2 blog-decs h-100">
-                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope</h5>
+                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope
+                                            </h5>
                                             <p class="fs-16 fw-normal mt-2 pb-1 mb-2">On April 1, 2016</p>
-                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                                         </div>
                                     </div>
@@ -611,9 +651,11 @@
                                     <div>
                                         <img src="./assets/img/virat.png" alt="virat" class="w-100">
                                         <div class="px-4 pb-3 pt-2 blog-decs h-100">
-                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope</h5>
+                                            <h5 class="fw-bold pt-1 heading-clamp">Analysis of Virat Kohli's horoscope
+                                            </h5>
                                             <p class="fs-16 fw-normal mt-2 pb-1 mb-2">On April 1, 2016</p>
-                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            <p class="text-gray-75 line-clamp">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
                                                 elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                                         </div>
                                     </div>
@@ -621,7 +663,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row" data-aos="fade-up" data-aos-duration="2000">
                             <div class="col-md-12">
                                 <a href="#"
                                     class="text-white text-decoration-none mt-md-4 pt-2 d-flex align-items-center justify-content-end gap-2 text-gray-50 fs-26">More
@@ -631,33 +673,36 @@
                     </section>
 
                     <section class="mt-md-5 mt-0 pt-5">
-                        <h3 class="fs-120 ff-type2 section-heading">Help Centre</h3>
+                        <h3 class="fs-120 ff-type2 section-heading" data-aos="fade-up" data-aos-duration="2000">Help
+                            Centre</h3>
                         <div class="row">
-                            <div class="col-md-9 offset-md-3">
+                            <div class="col-md-9 offset-md-3 " data-aos="fade-up" data-aos-duration="2000">
                                 <hr class="ms-md-4" />
                             </div>
                         </div>
 
                         <div class="row mt-4 pt-4">
-                            <div class="col-md-4 mb-4">
-                                <p class="text-gray-50 h5 fw-normal">Browse help topics, and you can also connect via
+                            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                                <p class="text-gray-50 h5 fw-normal" >Browse
+                                    help topics, and you can also connect via
                                     Email and WhatsApp
                                     <span class="text-primary"></span>
                                 </p>
                                 <img src="./assets/img/right-arrow.svg" alt="right-arrow">
                                 <div class="d-flex gap-3 mt-4">
-                                    <a href="https://www.google.com/" target="_blank"><img src="./assets/img/whatsapp.svg" alt="whatsapp"></a>
-                                    <a href="https://www.google.com/" target="_blank"><img src="./assets/img/email.svg" alt="email"></a>
+                                    <!-- <a href="https://www.google.com/" target="_blank"><img src="./assets/img/whatsapp.svg" alt="whatsapp"></a> -->
+                                    <a href="https://www.google.com/" target="_blank"><img src="./assets/img/email.svg"
+                                            alt="email"></a>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item mb-2">
                                         <h2 class="accordion-header" id="headingOne">
                                             <button class="accordion-button fs-16 fw-normal" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                 aria-expanded="true" aria-controls="collapseOne">
-                                                Get start with astrologer
+                                                <span>Get start with astrologer</span>
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
@@ -680,7 +725,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                I want to know about my family planning
+                                                <span>I want to know about my family planning</span>
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse"
@@ -703,7 +748,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                 aria-expanded="false" aria-controls="collapseThree">
-                                                How to book appointment
+                                                <span>How to book appointment</span>
                                             </button>
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse"
@@ -726,7 +771,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                 aria-expanded="false" aria-controls="collapseFour">
-                                                Future planning
+                                                <span>Future planning</span>
                                             </button>
                                         </h2>
                                         <div id="collapseFour" class="accordion-collapse collapse"
@@ -749,7 +794,7 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                 aria-expanded="false" aria-controls="collapseFive">
-                                                Meeting with astrologer
+                                                <span>Meeting with astrologer</span>
                                             </button>
                                         </h2>
                                         <div id="collapseFive" class="accordion-collapse collapse"
@@ -773,34 +818,39 @@
                     </section>
 
                     <section class="mt-md-5 md-0 pt-5">
-                        <h3 class="fs-120 ff-type2 section-heading">For latest predictions</h3>
-                        <h2 class="fs-60 ff-type2 fw-semibold text-primary">Follow us on social!</h2>
+                        <h3 class="fs-120 ff-type2 section-heading" data-aos="fade-up" data-aos-duration="2000">For
+                            latest predictions</h3>
+                        <h2 class="fs-60 ff-type2 fw-semibold text-primary" data-aos="fade-up" data-aos-duration="2000">Follow us on social!</h2>
                         <div class="row">
-                            <div class="col-md-9 offset-md-3">
+                            <div class="col-md-9 offset-md-3" data-aos="fade-up" data-aos-duration="2000">
                                 <hr class="ms-md-4" />
                             </div>
                         </div>
-                        <div class="row my-md-5 my-4">
-                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4  text-xl-center">
-                                <a href="https://www.google.com/" target="_blank" class="text-white fw-semibold fs-26 text-decoration-none">
+                        <div class="row my-md-5 my-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4  text-xl-end">
+                                <a href="https://www.google.com/" target="_blank"
+                                    class="text-white fw-semibold fs-26 text-decoration-none">
                                     <img src="./assets/img/instagram.svg" alt="Instagram" class="me-3">
                                     Instagram
                                 </a>
                             </div>
-                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-center">
-                                <a href="https://www.google.com/" target="_blank" class="text-white fw-semibold fs-26 text-decoration-none">
+                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-end">
+                                <a href="https://www.google.com/" target="_blank"
+                                    class="text-white fw-semibold fs-26 text-decoration-none">
                                     <img src="./assets/img/facebook.svg" alt="Facebook" class="me-3">
                                     Facebook
                                 </a>
                             </div>
-                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-center">
-                                <a href="https://www.google.com/" target="_blank" class="text-white fw-semibold fs-26 text-decoration-none">
+                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-end">
+                                <a href="https://www.google.com/" target="_blank"
+                                    class="text-white fw-semibold fs-26 text-decoration-none">
                                     <img src="./assets/img/twitter.svg" alt="X (Twitter)" class="me-3">
                                     X (Twitter)
                                 </a>
                             </div>
-                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-center">
-                                <a href="https://www.google.com/" target="_blank" class="text-white fw-semibold fs-26 text-decoration-none">
+                            <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 text-xl-end">
+                                <a href="https://www.google.com/" target="_blank"
+                                    class="text-white fw-semibold fs-26 text-decoration-none">
                                     <img src="./assets/img/youtube.svg" alt="YouTube" class="me-3">
                                     YouTube
                                 </a>
@@ -809,9 +859,10 @@
                     </section>
 
                     <section class="mb-md-5 py-md-5 py-4">
-                        <h2 class="fs-60 ff-type2 fw-semibold text-white mb-3">Get in Touch</h2>
+                        <h2 class="fs-60 ff-type2 fw-semibold text-white mb-3" data-aos="fade-up"
+                            data-aos-duration="2000">Get in Touch</h2>
 
-                        <form>
+                        <form data-aos="fade-up" data-aos-duration="2000">
                             <div class="row">
                                 <div class="col-md-4 col-xl-5">
                                     <div class="form-floating mb-4">
@@ -842,10 +893,10 @@
                     <div class="row py-3">
                         <div class="col-md-7">
                             <p class="text-white m-0">Copyright 2024 Stars
-                                    and
-                                    Astrology Inc. | All Rights
-                                    Reserved | <a href="#" class="text-decoration-none text-white">Privacy
-                    s                Policy</a></p>
+                                and
+                                Astrology Inc. | All Rights
+                                Reserved | <a href="#" class="text-decoration-none text-white">Privacy
+                                    s Policy</a></p>
                         </div>
                         <div class="col-md-5">
                             <p class="m-0 text-white text-md-end">Design & Developed By: <a
@@ -865,8 +916,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -878,6 +929,10 @@
             }
         });
     </script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

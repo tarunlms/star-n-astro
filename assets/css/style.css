@@ -11,6 +11,13 @@ html {
   height: 100%;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .maxh-114 {
   max-height: 114px;
   overflow: hidden;
@@ -25,6 +32,7 @@ html {
 }
 
 .navbar .navbar-toggler {
+  padding: 3px;
   background: transparent !important;
   border: 1px solid #BEBEBE;
   border-radius: 1px;
@@ -85,9 +93,22 @@ html {
   left: 0;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .navbar {
+    background-image: url(../img/login-strip.png);
+  }
+  .navbar .button_navigation li {
+    padding: 0 !important;
+  }
+}
 
 .h-88vh {
   min-height: 88dvh;
+}
+@media (max-width: 767px) {
+  .h-88vh {
+    min-height: 44dvh;
+  }
 }
 
 /***********Font Sizes************/
@@ -497,6 +518,11 @@ svg text {
   background: transparent !important;
   color: #E4E4E4 !important;
 }
+.accordion .accordion-item .accordion-header .accordion-button span {
+  word-break: break-all;
+  margin-right: 30px;
+  line-height: 24px;
+}
 .accordion .accordion-item .accordion-header .accordion-button:after {
   background-image: url(../img/angledown.svg);
   position: absolute;
@@ -850,6 +876,9 @@ svg text {
     display: none;
   }
 }
+.logged-out .profile-drop:last-child {
+  display: none;
+}
 .logged-out .profile-dropdown {
   display: none;
 }
@@ -878,4 +907,8 @@ p.figdecs {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.hero-section .mobile-hero .heading {
+  font-size: 60px;
 }/*# sourceMappingURL=style.css.map */

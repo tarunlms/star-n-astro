@@ -14,7 +14,12 @@ body {
 html {
     height: 100%;
 }
-
+.container{
+    @media(max-width:767px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 .maxh-114 {
     max-height: 114px;
     overflow: hidden;
@@ -27,6 +32,7 @@ html {
 }
 .navbar {
     .navbar-toggler{
+        padding: 3px;
         &:focus{
             box-shadow: none;
         }
@@ -97,10 +103,21 @@ html {
         left: 0;
         width: 100%;
     }
+    @media (max-width:767px) {
+        background-image: url(../img/login-strip.png); 
+        .button_navigation{
+            li{
+                padding: 0 !important;
+            }
+        }
+    }
 }
 
 .h-88vh {
     min-height: 88dvh;
+    @media (max-width:767px) {
+        min-height: 44dvh;
+    }
 }
 
 /***********Font Sizes************/
@@ -549,66 +566,26 @@ svg {
     overflow: hidden;
 }
 
-// .accordion {
-//     .accordion-item {
-//         border-radius: 0 !important;
-//         background-color: rgba(black, $alpha: 0.5) !important;
-//         border: none !important;
-//         padding: 16px 16px 0 16px;
-
-//         .accordion-header {
-//             padding-bottom: 16px;
-
-//             .accordion-button {
-//                 padding-bottom: 16px;
-//                 border-radius: 0 !important;
-//                 background: transparent !important;
-//                 color: $default-text !important;
-//                 padding: 0;
-
-//                 &:after {
-//                     background-image: url(../img/angledown.svg);
-//                     position: absolute;
-//                     top: 5px;
-//                     right: 0;
-//                 }
-
-//                 &:focus {
-//                     outline: none;
-//                     box-shadow: none;
-//                 }
-//             }
-//         }
-
-//         .accordion-collapse {
-//             padding-bottom: 16px !important;
-
-//             .accordion-body {
-//                 color: $platinum-gray !important;
-//                 padding: 16px 0 0 0 !important;
-//                 border-top: 1px solid $night-gray;
-//                 font-size: 16px;
-//             }
-//         }
-//     }
-// }
-
 .accordion {
     .accordion-item {
         border-radius: 0 !important;
         background-color: rgba(black, $alpha: 0.5) !important;
         border: none !important;
-        // padding: 16px 16px 0 16px;
+        
 
         .accordion-header {
-            // padding-bottom: 16px;
+            
 
             .accordion-button {
                 padding-bottom: 16px;
                 border-radius: 0 !important;
                 background: transparent !important;
                 color: $default-text !important;
-                // padding: 0;
+                span{
+                    word-break: break-all;
+                    margin-right: 30px;
+                    line-height: 24px;
+                }
 
                 &:after {
                     background-image: url(../img/angledown.svg);
@@ -988,6 +965,11 @@ svg {
             display: none;
         }
     }
+    .profile-drop{
+        &:last-child{
+            display: none;
+        }
+    }
     .profile-dropdown{
         display: none;
     }
@@ -1012,4 +994,11 @@ p.figdecs {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
+}
+.hero-section{
+    .mobile-hero{
+        .heading{
+            font-size: 60px;
+        }
+    }
 }

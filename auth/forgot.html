@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link href="./../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/aos.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 
 <body class="logged-out">
@@ -21,8 +22,8 @@
             <nav class="navbar navbar-expand-lg py-3 sticky-top clear-header" id="nav">
                 <div class="container">
                     <div class="navbar-logo">
-                        <a class="navbar-brand" href="/">
-                            <img src="./assets/img/stars-and-astrology.svg" alt="logo" />
+                        <a class="navbar-brand" href="../">
+                            <img src="../assets/img/stars-and-astrology.svg" alt="logo" />
                         </a>
                         <p class="profile-dropdown text-primary m-0" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,47 +33,47 @@
                     <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <img class="list" src="./assets/img/hamburger.svg">
-                        <img class="cross" src="./assets/img/cross.svg">
+                        <img class="list" src="../assets/img/hamburger.svg">
+                        <img class="cross" src="../assets/img/cross.svg">
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto my-3  my-lg-0 gap-lg-0 gap-3 d-flex flex-wrap align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/about.html">About Us</a>
+                                <a class="nav-link" aria-current="page" href="../about.html">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/predictions.html">Predictions</a>
+                                <a class="nav-link" href="../predictions.html">Predictions</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/media.html" aria-disabled="true">Media</a>
+                                <a class="nav-link" href="../media.html" aria-disabled="true">Media</a>
                             </li>
                         </ul>
                         <ul class="button_navigation p-0 mt-3 mt-lg-0 mb-0 gap-3 d-flex flex-wrap align-items-center ">
                             <li class="nav-item px-2 last-child">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="http://127.0.0.1:5500/#myServices">Book Appointment</a>
+                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="../#myServices">Book Appointment</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item px-2 last-child login-btn">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link" href="/auth/login.html">Login</a>
+                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="login.html">Login</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item px-2 last-child logout-btn">
-                                <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link" href="#">Logout</a>
-                                <!-- </button> -->
+                                <button class="btn btn-secondary btn-sm minw-107" >
+                                    Logout
+                                </button>
                             </li>
                             <li class="nav-item profile-drop px-2 last-child">
                                 <div class="dropdown">
                                     <p class="profile-dropdown text-primary dropdown-toggle m-0" type="button"
                                         id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hello Tony <img src="./assets/img/CaretDown.svg">
+                                        Hello Tony <img src="../assets/img/CaretDown.svg">
                                     </p>
                                     <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center border-bottom-gray"
-                                                href="/profile.html">
+                                                href="../profile.html">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -80,7 +81,7 @@
                                                         fill="white" />
                                                 </svg>
                                                 Profile</a></li>
-                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center" href="#">
+                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center" >
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -101,7 +102,7 @@
                     <!-- Forget start -->
                     <div class="row mt-md-5 pt-5">
                         <div class="col-lg-7 mx-auto">
-                            <div class="auth-wrapper">
+                            <div class="auth-wrapper" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="p-md-5 p-3">
                                     <div class="row">
                                         <div class="col-lg-10 mx-auto">
@@ -148,13 +149,13 @@
                         <div class="col-md-5">
                             <p class="m-0 text-white text-md-end">Design & Developed By: <a
                                     href="https://www.lmsin.com/" target="_blank" class="text-decoration-none"><img
-                                        src="./assets/img/lms_logo.svg" alt="LMS"></a></p>
+                                        src="../assets/img/lms_logo.svg" alt="LMS"></a></p>
                         </div>
                     </div>
                 </div>
             </footer>
             <a href="#" class="chatbot">
-                <img src=".././assets/img/chatbot.svg" alt="Chat Bot">
+                <img src="../assets/img/chatbot.svg" alt="Chat Bot">
             </a>
         </div>
     </main>
@@ -165,6 +166,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
     </script>
+    <script src="../assets/js/aos.js"></script>
     <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -176,6 +178,9 @@
             }
         });
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
