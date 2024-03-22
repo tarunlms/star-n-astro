@@ -1057,7 +1057,8 @@ p.figdecs {
             max-width: 100%;
         }
         .modal-content{
-            background: url(../img/bg-chat.png);
+            background-image: url(../img/bg-chat.png);
+            background-size: cover;
             height: 90vh;
             .modal-header{
                 background-image: url(../img/strip.png);
@@ -1069,6 +1070,9 @@ p.figdecs {
                     img{
                         width: 40px;
                     }
+                }
+                .close-btn{
+                    cursor: pointer;
                 }
             }
             .modal-body{
@@ -1122,6 +1126,6 @@ p.figdecs {
 }
 .modal-body::-webkit-scrollbar {
     width: 1px;
-  }
+}
    
   

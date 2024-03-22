@@ -973,7 +973,8 @@ p.figdecs {
   }
 }
 .modal-chatbot .modal-dialog .modal-content {
-  background: url(../img/bg-chat.png);
+  background-image: url(../img/bg-chat.png);
+  background-size: cover;
   height: 90vh;
 }
 .modal-chatbot .modal-dialog .modal-content .modal-header {
@@ -985,6 +986,9 @@ p.figdecs {
 }
 .modal-chatbot .modal-dialog .modal-content .modal-header .logowrap img {
   width: 40px;
+}
+.modal-chatbot .modal-dialog .modal-content .modal-header .close-btn {
+  cursor: pointer;
 }
 .modal-chatbot .modal-dialog .modal-content .modal-body {
   overflow-y: scroll;
