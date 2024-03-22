@@ -116,8 +116,9 @@ html {
 
 .h-88vh {
     min-height: 88dvh;
-    @media (max-width:767px) {
-        min-height: 44dvh;
+    padding: 30px 0;
+    @media (max-width:1366px) {
+        min-height: auto;
     }
 }
 
@@ -151,7 +152,9 @@ html {
 .fs-18 {
     font-size: 1.15rem;
 }
-
+.fs-12{
+    font-size: 12px;
+}
 .fs-26 {
     font-size: 1.62rem;
 }
@@ -204,6 +207,7 @@ svg {
 
 .name-svg{
     width: 620px;
+    height: 100px;
     @media(max-width:1024px){
         width: 420px; 
     }
@@ -342,7 +346,9 @@ svg {
 .minw-248 {
     min-width: 248px;
 }
-
+.minw-188 {
+    min-width: 188px;
+}
 .minw-107 {
     min-width: 107px;
 }
@@ -1000,6 +1006,9 @@ p.figdecs {
     .mobile-hero{
         .heading{
             font-size: 60px;
+            @media (max-width:512px) {
+                font-size: 48px;
+            }
         }
     }
 }
@@ -1016,3 +1025,103 @@ p.figdecs {
             left: -15px;
         }
 }
+.profile-data{
+    @media (max-width:1200px) {
+        font-size: 16px;
+    }
+}
+.modal-dialog{
+    max-width: 800px;
+    .modal-content{
+        background-color: rgba(14, 21, 30, 1);
+        .form-floating {
+            .form-control{
+                &.is-invalid{
+                    border-color: #dc3545 !important;;
+                }
+            }
+        }
+    }
+}
+.modal-whatsapp{
+    .modal-dialog{
+        max-width: 585px;
+    }
+}
+.modal-chatbot{
+    .modal-dialog{
+        max-width: 368px;
+        margin-right: 50px;
+        @media(max-width:575px){
+            margin: 20px;
+            max-width: 100%;
+        }
+        .modal-content{
+            background: url(../img/bg-chat.png);
+            height: 90vh;
+            .modal-header{
+                background-image: url(../img/strip.png);
+                border-radius: 0px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-size: cover;
+                .logowrap{
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            .modal-body{
+                overflow-y: scroll;
+                
+                .user-message{
+                    @media(max-width:767px){
+                        .col-md-2{
+                            width: 15%;
+                        }
+                        .col-md-10{
+                            width: 85%;
+                        }
+                    }
+                }
+                .logowrap{
+                    img{
+                        width: 30px;
+                    }
+                }
+                .message{
+                    background-image: url(../img/message.png);
+                    background-size: cover;
+                    padding: 15px;
+                    background-position: left;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+            .modal-footer{
+                .messagePanel{
+                    background-color: rgba(6, 10, 15, 1);
+                    border-radius: 99px;
+                    border: 1px solid rgba(49, 49, 49, 1);
+                    height: 49px;
+                    padding: 16px 24px;
+                    color: #fff;
+                }
+                .sendMessage{
+                    width: 49px;
+                    height: 49px;
+                    padding: 13px 15px 12px 13px;
+                    background-image: url(../img/circle.png);
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+}
+.modal-body::-webkit-scrollbar {
+    width: 1px;
+  }
+   
+  

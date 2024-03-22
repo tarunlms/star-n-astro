@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-        <link href="../assets/css/aos.css" rel="stylesheet">
+    <link href="../assets/css/aos.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -44,7 +44,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../predictions.html">Predictions</a>
                             </li>
-        
+
                             <li class="nav-item">
                                 <a class="nav-link" href="../media.html" aria-disabled="true">Media</a>
                             </li>
@@ -52,16 +52,17 @@
                         <ul class="button_navigation p-0 mt-3 mt-lg-0 mb-0 gap-3 d-flex flex-wrap align-items-center ">
                             <li class="nav-item ps-2 last-child">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="../index.html#myServices">Book Appointment</a>
+                                <a class="nav-link btn btn-secondary btn-sm minw-107"
+                                    href="../index.html#myServices">Book Appointment</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item ps-2 last-child login-btn">
                                 <!-- <button class="btn btn-secondary btn-sm minw-107" type="submit"> -->
-                                    <a class="nav-link btn btn-secondary btn-sm minw-107" href="login.html">Login</a>
+                                <a class="nav-link btn btn-secondary btn-sm minw-107" href="login.html">Login</a>
                                 <!-- </button> -->
                             </li>
                             <li class="nav-item ps-2 last-child logout-btn">
-                                <button class="btn btn-secondary btn-sm minw-107" >
+                                <button class="btn btn-secondary btn-sm minw-107">
                                     Logout
                                 </button>
                             </li>
@@ -81,7 +82,7 @@
                                                         fill="white" />
                                                 </svg>
                                                 Profile</a></li>
-                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center" >
+                                        <li><a class="dropdown-item d-flex gap-3 py-3 align-items-center">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -93,7 +94,7 @@
                                 </div>
                             </li>
                         </ul>
-        
+
                     </div>
                 </div>
             </nav>
@@ -103,31 +104,33 @@
                     <div class="row mt-md-5  pt-5">
                         <div class="col-lg-6 mx-auto">
                             <div class="auth-wrapper" data-aos="fade-up" data-aos-duration="2000">
-                                <div class="p-md-5 p-3">
-                                    <div class="row">
-                                        <div class="col-lg-10 mx-auto">
-                                            <div class="text-center">
-                                                <h1 class="fs-60 fw-medium ff-type2 mb-4">Verify OTP</h1>
-                                                <p class="mb-4 pb-2">Enter verification number sent to your email</p>
+                                <form>
+                                    <div class="p-md-5 p-3">
+                                        <div class="row">
+                                            <div class="col-lg-10 mx-auto">
+                                                <div class="text-center">
+                                                    <h1 class="fs-60 fw-medium ff-type2 mb-4">Verify OTP</h1>
+                                                    <p class="mb-4 pb-2">Enter verification number sent to your email
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="mb-4 pb-2 d-flex gap-4 justify-content-center">
+                                            <input type="text" class="otp-control">
+                                            <input type="text" class="otp-control">
+                                            <input type="text" class="otp-control">
+                                            <input type="text" class="otp-control">
+                                        </div>
+                                        <div class="d-xl-flex d-grid gap-4 justify-content-xl-center">
+                                            <button class="btn btn-secondary w-100">
+                                                Cancel
+                                            </button>
+                                            <button type="submit" class="btn btn-primary w-100">
+                                                Verify
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="mb-4 pb-2 d-flex gap-4 justify-content-center">
-                                        <input type="text" class="otp-control">
-                                        <input type="text" class="otp-control">
-                                        <input type="text" class="otp-control">
-                                        <input type="text" class="otp-control">
-                                    </div>
-                                    <div class="d-xl-flex d-grid gap-4 justify-content-xl-center">
-                                        <button class="btn btn-secondary w-100">
-                                            Cancel
-                                        </button>
-                                        <button class="btn btn-primary w-100">
-                                            Verify
-                                        </button>
-                                    </div>
-                                </div>
-
+                                </form>
                             </div>
                         </div>
                     </div>
